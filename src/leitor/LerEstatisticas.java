@@ -35,7 +35,10 @@ public class ServiceEstatisticas implements LerArquivo<Estatistica> {
                 estatistica.setPasses(campos[6].replace("\"", ""));
                 estatistica.setPrecisaoPasses(campos[7].replace("\"", ""));
                 estatistica.setFaltas(campos[8].replace("\"", ""));
-                estatistica.setCartao(campos[9].replace("\"", ""));
+                estatistica.setCartaoAmarelo(campos[9].replace("\"", ""));
+                estatistica.setCartaoVermelho(campos[10].replace("\"", ""));
+                estatistica.setImpedimentos(campos[11].replace("\"", ""));
+                estatistica.setEscanteios(campos[12].replace("\"", ""));
 
                 estatisticas.add(estatistica);
             }
