@@ -1,4 +1,4 @@
-package Service;
+package leitor;
 
 import model.Estatistica;
 
@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ServiceEstatisticas implements LerArquivo<Estatistica> {
+public class LerEstatisticas implements LerArquivo<Estatistica> {
     @Override
     public List <Estatistica> ler() {
         String caminhoDoArquivo = "src/csv/campeonato-brasileiro-estatisticas-full.csv";

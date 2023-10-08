@@ -1,5 +1,7 @@
 package model;
 
+import java.security.SecureRandom;
+
 public class Estatistica {
     private String partidaId;
     private String rodada;
@@ -10,7 +12,10 @@ public class Estatistica {
     private String passes;
     private String precisaoPasses;
     private String faltas;
-    private String cartao;
+    private String cartaoAmarelo;
+   private String cartaoVermelho;
+   private String impedimentos;
+   private String escanteios;
 
     public String getPartidaId() {
         return partidaId;
@@ -84,27 +89,54 @@ public class Estatistica {
         this.faltas = faltas;
     }
 
-    public String getCartao() {
-        return cartao;
+    public String getCartaoAmarelo() {
+        return cartaoAmarelo;
     }
 
-    public void setCartao(String cartao) {
-        this.cartao = cartao;
+    public void setCartaoAmarelo(String cartaoAmarelo) {
+        this.cartaoAmarelo = cartaoAmarelo;
+    }
+
+    public String getCartaoVermelho() {
+        return cartaoVermelho;
+    }
+
+    public void setCartaoVermelho(String cartaoVermelho) {
+        this.cartaoVermelho = cartaoVermelho;
+    }
+
+    public String getImpedimentos() {
+        return impedimentos;
+    }
+
+    public void setImpedimentos(String impedimentos) {
+        this.impedimentos = impedimentos;
+    }
+
+    public String getEscanteios() {
+        return escanteios;
+    }
+
+    public void setEscanteios(String escanteios) {
+        this.escanteios = escanteios;
     }
 
     @Override
     public String toString() {
         return "Estatistica{" +
                 "partidaId='" + partidaId + '\'' +
-                ", rodada=" + rodada +
+                ", rodada='" + rodada + '\'' +
                 ", clube='" + clube + '\'' +
-                ", chutes=" + chutes +
-                ", chutesNoAlvo=" + chutesNoAlvo +
-                ", posseDeBola=" + posseDeBola +
-                ", passes=" + passes +
-                ", precisaoPasses=" + precisaoPasses +
-                ", faltas=" + faltas +
-                ", cartao=" + cartao +
+                ", chutes='" + chutes + '\'' +
+                ", chutesNoAlvo='" + chutesNoAlvo + '\'' +
+                ", posseDeBola='" + posseDeBola + '\'' +
+                ", passes='" + passes + '\'' +
+                ", precisaoPasses='" + precisaoPasses + '\'' +
+                ", faltas='" + faltas + '\'' +
+                ", cartaoAmarelo='" + cartaoAmarelo + '\'' +
+                ", cartaoVermelho='" + cartaoVermelho + '\'' +
+                ", impedimentos='" + impedimentos + '\'' +
+                ", escanteios='" + escanteios + '\'' +
                 '}';
     }
 }

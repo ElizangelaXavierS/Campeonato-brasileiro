@@ -1,4 +1,4 @@
-package Service;
+package leitor;
 
 
 import model.Gol;
@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ServiceGols implements LerArquivo<Gol>{
+public class LerGols implements LerArquivo<Gol>{
     @Override
     public List<Gol> ler() {
         String caminhoDoArquivo = "src/csv/campeonato-brasileiro-gols.csv";

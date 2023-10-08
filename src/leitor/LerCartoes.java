@@ -1,4 +1,4 @@
-package Service;
+package leitor;
 
 import model.Cartao;
 
@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ServiceCartoes implements LerArquivo<Cartao> {
+public class LerCartoes implements LerArquivo<Cartao> {
 
     @Override
     public List<Cartao> ler() {

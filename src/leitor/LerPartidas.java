@@ -1,4 +1,4 @@
-package Service;
+package leitor;
 
 
 import model.Partida;
@@ -13,7 +13,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ServicePartidas implements LerArquivo<Partida>{
+public class LerPartidas implements LerArquivo<Partida>{
     @Override
     public List<Partida> ler() {
         String caminhoDoArquivo = "src/csv/campeonato-brasileiro-full.csv";
